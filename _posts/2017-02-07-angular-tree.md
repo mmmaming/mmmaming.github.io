@@ -3,7 +3,7 @@ layout: default
 title: angular-tree基础实现
 ---
 ## 用法
-在html页面，使用`tree`标签以及data和item-template属性。
+在html页面，使用tree标签以及data和item-template属性。
 `<tree data="vm.tree" item-template="vm.itemTemplate"></tree>`
 其中，data是我们的tree所需要展示的数据，item-template是tree要显示的内容。（用户自定义）
 
@@ -33,8 +33,8 @@ item-template:用户可以在这里自定义所需要显示的内容，并且增
 
 ```
 vm.itemTemplate = `<div ng-class="{'cur-select' : vm.id === item.id}" ng-click="vm.add(item)" ng-dblclick="vm.edit(item)" ng-show="!item.isEdit">{{item.name}}</div>
-                        <input ng-dblclick="vm.edit(item)" type="text" ng-model="item.name" ng-show="item.isEdit">
-                        <button ng-click="vm.del(item)" ng-show="vm.id === item.id">删除</button>`;
+    <input ng-dblclick="vm.edit(item)" type="text" ng-model="item.name" ng-show="item.isEdit">
+    <button ng-click="vm.del(item)" ng-show="vm.id === item.id">删除</button>`;
 ```
 
 效果：
