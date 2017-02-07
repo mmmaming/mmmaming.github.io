@@ -13,9 +13,14 @@ body {
   color: #fff;
 }
 .markdown-body {
+  p {
+    font-weight: 600;
+    color: lightblue;
+  }
   ul {
     li {
       list-style-type: decimal;
     }
   }
+
 }
