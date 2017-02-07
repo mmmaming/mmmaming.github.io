@@ -12,3 +12,10 @@ body {
 .title {
   color: #fff;
 }
+.markdown-body {
+  ul {
+    li {
+      list-style-type: decimal;
+    }
+  }
+}
