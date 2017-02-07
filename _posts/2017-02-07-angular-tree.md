@@ -4,8 +4,7 @@ title: angular-tree基础实现
 ---
 ## 用法
 在html页面，使用tree标签以及data和item-template属性。
-`    <tree data="vm.tree" item-template="vm.itemTemplate"></tree>
-`
+`<tree data="vm.tree" item-template="vm.itemTemplate"></tree>`
 其中，data是我们的tree所需要展示的数据，item-template是tree要显示的内容。（用户自定义）
 
 data:
