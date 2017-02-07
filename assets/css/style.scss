@@ -13,13 +13,17 @@ body {
   color: #fff;
 }
 .markdown-body {
-  p {
+  .p {
     font-weight: 600;
     color: lightblue;
   }
-  ul {
+  .blog-ul {
     li {
       list-style-type: decimal;
+      a:hover {
+        color: #90D355;
+        text-decoration: none;
+      }
     }
   }
 

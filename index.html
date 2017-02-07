@@ -3,9 +3,9 @@ layout: default
 title: 我的博客
 ---
 <h2>{{ page.title }}</h2>
-<p>博客列表</p>
-<ul>
+<p class="p">博客列表</p>
+<ul class="blog-ul">
     {% for post in site.posts %}
-        <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        <li>{{ post.date | date_to_locale_date_string }} >> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
