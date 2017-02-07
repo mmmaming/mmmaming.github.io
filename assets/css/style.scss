@@ -24,8 +24,11 @@ body {
   .blog-ul {
     li {
       list-style-type: decimal;
+      a {
+        color: #a8d1de;
+      }
       a:hover {
-        color: #90D355;
+        color: #dff1f7;
         text-decoration: none;
       }
     }
