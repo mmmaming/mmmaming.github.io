@@ -1,4 +1,4 @@
-baseurl: /mmmaming.github.io
 theme: jekyll-theme-time-machine
 title: mmmaming's blog
-show_downloads: true
+description: sometimes ever, sometimes never.
+#show_downloads: true     #显示下载链接
