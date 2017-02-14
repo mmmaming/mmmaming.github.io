@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d57cc3b-def2-43cc-9a18-e366bf6a65ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-02-13-现代浏览器加载资源分析.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mmmaming_blog.iws" />
@@ -50,8 +49,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-02-07-angular-tree.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="443">
-                <caret line="100" column="28" selection-start-line="88" selection-start-column="10" selection-end-line="100" selection-end-column="28" />
+              <first_editor relative-caret-position="257">
+                <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -168,7 +167,6 @@
         <option value="$PROJECT_DIR$/assets/css/style.sass" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/style.scss" />
-        <option value="$PROJECT_DIR$/_posts/2017-02-07-angular-tree.md" />
         <option value="$PROJECT_DIR$/_posts/2017-02-07-web前端emoji表情.md" />
         <option value="$PROJECT_DIR$/_posts/2017-02-07-angular安全验证.md" />
         <option value="$PROJECT_DIR$/_posts/2017-02-07-JS-curry.md" />
@@ -181,6 +179,7 @@
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/_posts/2017-02-13-现代浏览器加载资源分析.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-02-07-angular-tree.md" />
       </list>
     </option>
   </component>
@@ -416,12 +415,12 @@
       <workItem from="1486603128669" duration="621000" />
       <workItem from="1486620448590" duration="1901000" />
       <workItem from="1486972596282" duration="7817000" />
-      <workItem from="1487035123414" duration="2073000" />
+      <workItem from="1487035123414" duration="2165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29772000" />
+    <option name="totallyTimeSpent" value="29864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -747,8 +746,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-02-07-angular-tree.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="443">
-            <caret line="100" column="28" selection-start-line="88" selection-start-column="10" selection-end-line="100" selection-end-column="28" />
+          <first_editor relative-caret-position="257">
+            <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
             <folding />
           </first_editor>
           <second_editor />
