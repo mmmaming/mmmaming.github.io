@@ -2,6 +2,8 @@
 layout: default
 title: angular-tree基础实现
 ---
+# {{page.title}}
+
 ## 用法
 在html页面，使用tree标签以及data和item-template属性。
 `<tree data="vm.tree" item-template="vm.itemTemplate"></tree>`
