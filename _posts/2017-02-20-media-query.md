@@ -79,3 +79,5 @@ title: 媒体查询
 | resolution|	定义设备的分辨率。如：96dpi, 300dpi, 118dpcm||
 | scan|	定义电视类设备的扫描工序。||
 | width|	定义输出设备中的页面可见区域宽度。||
+
+具体demo见 [https://github.com/mmmaming/media-query-demo](https://github.com/mmmaming/media-query-demo)
