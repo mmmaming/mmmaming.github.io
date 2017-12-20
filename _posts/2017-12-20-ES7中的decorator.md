@@ -6,12 +6,12 @@ title: ES7中的decorator
 
 ## 什么是decorator
 
-decorator，顾名思义，装饰器，用来装饰类或者类的方法，目前在ECMAScript中已经有[提案](https://github.com/tc39/proposal-decorators)加入了这个功能。
-decorator主要的作用就是可以用来修改类或者方法的默认行为，增加一些自定义操作，并且不会影响原有的逻辑，如常用的安全检查，日志系统，调试功能等。
+`decorator`，顾名思义，装饰器，用来装饰类或者类的方法，目前在ECMAScript中已经有[提案](https://github.com/tc39/proposal-decorators)加入了这个功能。
+`decorator`主要的作用就是可以用来修改类或者方法的默认行为，增加一些自定义操作，并且不会影响原有的逻辑，如常用的安全检查，日志系统，调试功能等。
 
 ## 如何使用decorator
 
-decorator的使用方法有两种，一种是给类添加decorator，另一种是给类的属性添加decorator。（注意decorator不能用于装饰函数，因为函数存在函数提升的情况）
+decorator的使用方法有两种，一种是给类添加`decorator`，另一种是给类的属性添加`decorator`。（注意`decorator`不能用于装饰函数，因为函数存在函数提升的情况）
 先来看第一种情况。
 
 ```
@@ -26,9 +26,9 @@ class Cat {
 console.log(Cat.isAnimal); // true
 ```
 
-在上面的例子中，我们为Cat类增加了名为decorator的装饰器，意味着我们需要装饰的是这个类，在decorator方法中的参数target指的就是要装饰的类，在例子中是Cat类。为Cat类增加了一个属性 `isAnimal`,则我们的Cat上就会挂载一个isAnimal属性，我们并不需要去修改原有的Cat类，即可修改Cat的默认行为。
+在上面的例子中，我们为`Cat`类增加了名为`decorator`的装饰器，意味着我们需要装饰的是这个类，在`decorator`方法中的参数target指的就是要装饰的类，在例子中是`Cat`类。为`Cat`类增加了一个属性 `isAnimal`,则我们的`Cat`上就会挂载一个`isAnimal`属性，我们并不需要去修改原有的`Cat`类，即可修改`Cat`的默认行为。
 
-接下来再看一个例子，我们想给一个Fruit类增加同样的装饰器。
+接下来再看一个例子，我们想给一个`Fruit`类增加同样的装饰器。
 
 ```
 const decorator = (target) => {
@@ -86,7 +86,7 @@ cat.age = 5;
 console.log(cat.age);  // Uncaught TypeError: Cannot assign to read only property 'age' of object '#<Cat>'
 ```
 
-现在，age属性变为只读属性了，对于age的修改操作都会在控制台提示报错。
+现在，`age`属性变为只读属性了，对于`age`的修改操作都会在控制台提示报错。
 
 同理，如果我们想通过参数去控制此属性是否需要设置成只读呢？同样的，写法类似于上面第一种情况的示例。
 
@@ -110,7 +110,7 @@ console.log(cat.age); // 5
 console.log(cat.name);// Uncaught TypeError: Cannot assign to read only property 'name' of object '#<Cat>'
 ```
 
-我们注意到，第二种情况和第一种情况的写法不太一样，多了两个参数，如果仔细看的话，会发现，是不是和Object.defineProperty的参数很像？或者说是一模一样。
+我们注意到，第二种情况和第一种情况的写法不太一样，多了两个参数，如果仔细看的话，会发现，是不是和`Object.defineProperty`的参数很像？或者说是一模一样。
 
 实际上它的执行就是
 ```
@@ -118,11 +118,11 @@ descriptor = readonly(Cat.prototype, 'age', descriptor) || descriptor
 ```
 通过重新定义对象的属性，来达到装饰原有属性的行为。
 
-至此，decorator的两种使用方法，都做了介绍。
+至此，`decorator`的两种使用方法，都做了介绍。
 
 ## decorator的应用场景
 
-说了什么是decorator以及怎么写一个decorator之后，接下来要说的就是decorator的应用场景了。一个比较常见的场景是，一个记录操作的日志系统。
+说了什么是`decorator`以及怎么写一个`decorator`之后，接下来要说的就是`decorator`的应用场景了。一个比较常见的场景是，一个记录操作的日志系统。
 
 这里我们写一个数码宝贝中亚古兽的进化过程。
 
