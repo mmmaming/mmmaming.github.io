@@ -109,3 +109,81 @@ cat.name = 'jack';
 console.log(cat.age); // 5
 console.log(cat.name);// Uncaught TypeError: Cannot assign to read only property 'name' of object '#<Cat>'
 ```
+
+我们注意到，第二种情况和第一种情况的写法不太一样，多了两个参数，如果仔细看的话，会发现，是不是和Object.defineProperty的参数很像？或者说是一模一样。
+
+实际上它的执行就是
+```
+descriptor = readonly(Cat.prototype, 'age', descriptor) || descriptor
+```
+通过重新定义对象的属性，来达到装饰原有属性的行为。
+
+至此，decorator的两种使用方法，都做了介绍。
+
+## decorator的应用场景
+
+说了什么是decorator以及怎么写一个decorator之后，接下来要说的就是decorator的应用场景了。一个比较常见的场景是，一个记录操作的日志系统。
+
+这里我们写一个数码宝贝中亚古兽的进化过程。
+
+```
+class Agumon {
+  name = '亚古兽';
+  startEvolution(name) {
+    this.name = name;
+  }
+
+  currentName() {
+    console.log(this.name);;
+  }
+}
+
+var agumon = new Agumon();
+agumon.currentName(); // 亚古兽
+
+agumon.startEvolution('暴龙兽');
+agumon.currentName(); // 暴龙兽
+
+agumon.startEvolution('战斗暴龙兽');
+agumon.currentName(); // 战斗暴龙兽
+```
+
+如果我们想记录亚古兽的每次进化，则可以写一个日志系统来记录亚古兽的每次进化。
+
+```
+const evolutionLog = (target, name, descriptor) => {
+  const oldName = descriptor.value;
+  descriptor.value = function(...arg) {
+    console.log(`进化：  ${arg}`);
+    return oldName.apply(this, arg);
+  }
+};
+
+class Agumon {
+  name = '亚古兽';
+
+  @evolutionLog
+  startEvolution(name) {
+    this.name = name;
+  }
+
+  currentName() {
+    console.log(this.name);
+  }
+}
+
+var agumon = new Agumon();
+agumon.currentName();
+
+agumon.startEvolution('暴龙兽');
+agumon.currentName();
+
+agumon.startEvolution('战斗暴龙兽');
+agumon.currentName();
+
+// 亚古兽
+// 进化：  暴龙兽
+// 暴龙兽
+// 进化：  战斗暴龙兽
+// 战斗暴龙兽
+```
