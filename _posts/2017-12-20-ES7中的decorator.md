@@ -11,7 +11,7 @@ title: ES7中的decorator
 
 ## 如何使用decorator
 
-decorator的使用方法有两种，一种是给类添加`decorator`，另一种是给类的属性添加`decorator`。（注意`decorator`不能用于装饰函数，因为函数存在函数提升的情况）
+decorator的使用方法有两种，一种是给类添加`decorator`，另一种是给类的属性添加`decorator`(普通的对象字面量属性也可以添加装饰器)。（注意`decorator`不能用于装饰函数，因为函数存在函数提升的情况）
 先来看第一种情况。
 
 ```
@@ -116,7 +116,7 @@ console.log(cat.name);// Uncaught TypeError: Cannot assign to read only property
 ```
 descriptor = readonly(Cat.prototype, 'age', descriptor) || descriptor
 ```
-通过重新定义对象的属性，来达到装饰原有属性的行为。
+通过重新定义对象的属性，包装一个新的属性描述符安装到对应属性上来达到装饰原有属性的行为。
 
 至此，`decorator`的两种使用方法，都做了介绍。
 
