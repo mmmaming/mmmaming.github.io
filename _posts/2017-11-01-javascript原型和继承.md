@@ -47,7 +47,7 @@ Object是函数，所以函数的__proto__指向创建该函数的函数的proto
 
 /*
     Function.prototype.__proto__ === Object.prototype 
-    Function.prototype是一个对象，所以对象的__proto__就指向Object.prototype,因为对象时通过Object函数创建的
+    Function.prototype是一个对象，所以对象的__proto__就指向Object.prototype,因为对象是通过Object函数创建的
 */
 
 /*

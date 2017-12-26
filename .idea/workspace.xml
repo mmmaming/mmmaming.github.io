@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d57cc3b-def2-43cc-9a18-e366bf6a65ee" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-01-javascript原型和继承.md" afterPath="$PROJECT_DIR$/_posts/2017-11-01-javascript原型和继承.md" />
     </list>
     <ignored path="mmmaming_blog.iws" />
@@ -112,8 +113,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="473">
-                <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+              <first_editor relative-caret-position="249">
+                <caret line="49" column="67" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -514,12 +515,12 @@
       <workItem from="1509525425414" duration="4110000" />
       <workItem from="1513756261102" duration="7449000" />
       <workItem from="1513825777838" duration="2629000" />
-      <workItem from="1514258101447" duration="3504000" />
+      <workItem from="1514258101447" duration="3737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92295000" />
+    <option name="totallyTimeSpent" value="92528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
@@ -1014,8 +1015,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="473">
-            <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <first_editor relative-caret-position="249">
+            <caret line="49" column="67" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
             <folding />
           </first_editor>
           <second_editor />
