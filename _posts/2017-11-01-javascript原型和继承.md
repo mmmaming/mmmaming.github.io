@@ -7,6 +7,55 @@ title: JS原型和继承
 
 ![原型](https://github.com/mmmaming/mmmaming.github.io/blob/master/images/prototype.png?raw=true)
 
+### 原型
+
+对象分为普通对象和函数对象，函数对象有一个属性是原型对象`prototype`。普通对象没有`prototype`，但是有`__proto__`;
+构造函数的.prototype对象也有`__proto__`属性，它指向创建它的函数对象（Object）的prototype `Person.prototype.__proto__ === Object.prototype`
+通常在构造函数中的属性方法不会被共享，所以提出`prototype`，能让每个实例对象都共享构造函数的属性。
+
+理解原型最好的一句话
+每个对象都有一个`__proto__`属性，指向创建该对象的函数的`prototype`。
+只有一个特例 `Object.prototype.__proto__ === null`
+
+```
+// 看这么一个例子
+function A(){};
+var a = new A();
+var b = {};
+
+a.__proto__ === A.prototype;
+
+A.prototype.__proto__ === Object.prototype
+
+A.__proto__ === Function.prototype
+
+b.__proto__ === Object.prototype
+
+a.__proto__.__proto__ === Object.prototype
+
+Function.prototype.__proto__ === Object.prototype
+
+Function.__proto__ === Function.prototype
+
+Object.__proto__ === Function.prototype
+
+// 以上输出结果全是 true
+/*
+说几个比较特殊的 Object.__proto__ === Function.prototype 
+Object是函数，所以函数的__proto__指向创建该函数的函数的prototype，即Function.prototype
+*/
+
+/*
+    Function.prototype.__proto__ === Object.prototype 
+    Function.prototype是一个对象，所以对象的__proto__就指向Object.prototype,因为对象时通过Object函数创建的
+*/
+
+/*
+Function.__proto__ === Function.prototype
+创建Function的函数是Function
+*/
+```
+
 ### 继承
 
 目前有很多种继承方式，原型继承，构造继承，实例继承，组合继承等等很多种方式，各有各的优缺点，在此不一一列举，直接说目前最通用，优点最多，缺点最少的一个方案，寄生组合继承。
