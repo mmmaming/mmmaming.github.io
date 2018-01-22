@@ -126,5 +126,3 @@ vm.isLeaf = function(item) {
 最后，再修改一下样式，一个简单的tree就完成了。（[源码戳这里](https://github.com/mmmaming/angular-tree)）用户可以在自己的controller中定义自己想要的东西、交互、效果等，而不需要交给指令内部去实现，比较灵活。当然，不爽的地方就是需要在js里写html的代码。那么有没有办法直接在html标签中去写我们需要的内容呢？当然，不过这种实现方法比较麻烦，在此不做赘述，有兴趣的话可以看这个[github。](https://github.com/dump247/angular.tree)
 他的实现方式是通过js去生成dom元素，并且在每个item上`scope.$new()`去创建scope并继承到用户的scope上。一个很6的实现方法。
 
-## 总结
-在写tree的过程中，遇到了一些问题，最后也都得到了解决，并且在这个过程中，加深了对指令的理解。平时多写一些这样的小指令，对技能的掌握与巩固还是很有帮助的。最后，感谢@hjzheng ，@fnjoe在此期间提供的支持与帮助。
