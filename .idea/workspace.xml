@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d57cc3b-def2-43cc-9a18-e366bf6a65ee" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2021-08-26-Performance.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2021-12-06-[转载]-IDEA调试指南.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/img_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-02-13-现代浏览器加载资源分析.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2017-02-13-现代浏览器加载资源分析.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-12-06-[转载]-IDEA调试指南.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-12-06-[转载]-IDEA调试指南.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +147,7 @@
       <workItem from="1631084885824" duration="1176000" />
       <workItem from="1631094758799" duration="916000" />
       <workItem from="1631265012353" duration="2091000" />
-      <workItem from="1638769309193" duration="286000" />
+      <workItem from="1638769309193" duration="1780000" />
     </task>
     <servers />
   </component>
